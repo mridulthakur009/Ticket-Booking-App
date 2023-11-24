@@ -69,67 +69,44 @@
     </header>
 
     <section class="homePageBg">
-      <div class="container middle-sec">
-        <div class="row text-center my-3">
-          <div class="col-12">
-            <h1>
-              Online Bus Tickets
-            </h1>
-          </div>
-        </div>
+      <div class="container">
         <div class="row">
-          <div class="search_bg col-xs-12 col-sm-6 col-lg-3">
-            <div class="clr"></div>
-            <div id="one-way">
-              <div class="s_col_1 ">
-                <input class="input_city" required="required" type="text"
-                  placeholder="Source City">
-              </div>
-              <div class="s_col_1 col-xs-12 col-sm-6 col-lg-3">
-                <input class="input_city" required=" required" id="txtDesCity"
-                  type="text" placeholder="Destination City">
-              </div>
-              <div class="s_col_1 col-xs-12 col-sm-6 col-lg-3">
-                <input type="text" class="input_city_n" id="datepicker"
-                  name="datepicker" required="required"
-                  placeholder="dd-mm-yyyy" readonly="readonly">
-                <span class="dt_icn"></span>
-              </div>
-              <div class="s_col_btn_b col-xs-12 col-sm-6 col-lg-3">
-                <input value="Search" type="submit" class="bsrc-btn">
-              </div>
-            </div>
-        </div>
-      </section>
-
-      <section class="homePageBg">
-        <div class="container">
+          <div class="col-12 mt-4">
+            <h2 class="text-center">Online bus booking</h2>
+          </div>
           <div class="row">
-            <div class="col-12 mt-4">
-              <h2 class="text-center">Online bus booking</h2>
+            <div class="col-lg-3 col-md-6  mt-5">
+              <select class="form-control" id="start">
+                <option value="Source City">Source City</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Shimla">Mandi</option>
+                <option value="Solan">Shimla</option>
+                <option value="Solan">Manali</option>
+            </select>
             </div>
-            <div class="row">
-              <div class="col-lg-3 col-md-6  mt-5">
-                <input class="form-control" required="required" type="text"
-                  placeholder="Source City">
-              </div>
-              <div class="col-lg-3 col-md-6 mt-5">
-                <input class="form-control " id type="text"
-                  placeholder="Destination City">
-              </div>
-              <div class="col-lg-3 col-md-6 mt-5">
-                <input type="text" class="form-control" id="datepicker"
-                  name="datepicker" required="required"
-                  placeholder="dd-mm-yyyy">
-              </div>
-              <div class="col-lg-3 col-md-6 mt-5">
-                <input value="Search" type="submit"
-                  class="form-control btn btn-success">
-              </div>
+            <div class="col-lg-3 col-md-6 mt-5">
+              <select class="form-control" id="end">
+                <option value="Destination City">Destination City</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Shimla">Mandi</option>
+                <option value="Solan">Shimla</option>
+                <option value="Solan">Manali</option>
+            </select>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5">
+              <input type="date" class="form-control" id="datepicker"
+                name="datepicker" required="required"
+                placeholder="dd-mm-yyyy">
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5">
+              <input value="Search" type="submit"
+                class="form-control btn btn-success">
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
       <li><a href="./buslayout.html">sdrfghjkl</a></li>
 
       <a href="./buslayout.html"></a>
