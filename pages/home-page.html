@@ -1,20 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book My Bus</title>
-  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/all.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book My Bus</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+  </head>
 
-<body>
-  
-  <script src="../js/script.js"></script>
-  <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+  <body>
+    <div class="topHeader" id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="contactInfo">
+              <a href="mailto:support@bookmybus.com"><i
+                  class="fa-regular fa-envelope"></i> support@bookmybus.com</a>
+              <a href="tel:+1 55895548855">
+                <i class="fa-solid fa-mobile"></i> +91 1800 5548 55</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="socialMedia">
+              <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</html>
+    <header>
+      <div class="navMenu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="#" id="logo">
+              <img src="../images/logo1.ico" alt="logo" width="50px"
+                height="50px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#myNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end"
+              id="myNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                <li class="nav-item"><a
+                    class="nav-link btn btn-success myBtn text-white border-rounder-3"
+                    href="../index.html" style="border-radius: 25px;">Register</a></li>&nbsp;
+                <li class="nav-item"><a class="nav-link btn btn-primary"
+                    href="./login.html">Sign in</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="homePageBg">
+      <div class="container middle-sec">
+        <div class="row text-center my-3">
+          <div class="col-12">
+            <h1>
+              Online Bus Tickets
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="search_bg col-xs-12 col-sm-6 col-lg-3">
+            <div class="clr"></div>
+            <div id="one-way">
+              <div class="s_col_1 ">
+                <input class="input_city" required="required" type="text"
+                  placeholder="Source City">
+              </div>
+              <div class="s_col_1 col-xs-12 col-sm-6 col-lg-3">
+                <input class="input_city" required=" required" id="txtDesCity"
+                  type="text" placeholder="Destination City">
+              </div>
+              <div class="s_col_1 col-xs-12 col-sm-6 col-lg-3">
+                <input type="text" class="input_city_n" id="datepicker"
+                  name="datepicker" required="required"
+                  placeholder="dd-mm-yyyy" readonly="readonly">
+                <span class="dt_icn"></span>
+              </div>
+              <div class="s_col_btn_b col-xs-12 col-sm-6 col-lg-3">
+                <input value="Search" type="submit" class="bsrc-btn">
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="homePageBg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mt-4">
+              <h2 class="text-center">Online bus booking</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6  mt-5">
+                <input class="form-control" required="required" type="text"
+                  placeholder="Source City">
+              </div>
+              <div class="col-lg-3 col-md-6 mt-5">
+                <input class="form-control " id type="text"
+                  placeholder="Destination City">
+              </div>
+              <div class="col-lg-3 col-md-6 mt-5">
+                <input type="text" class="form-control" id="datepicker"
+                  name="datepicker" required="required"
+                  placeholder="dd-mm-yyyy">
+              </div>
+              <div class="col-lg-3 col-md-6 mt-5">
+                <input value="Search" type="submit"
+                  class="form-control btn btn-success">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <li><a href="./buslayout.html">sdrfghjkl</a></li>
+
+      <a href="./buslayout.html"></a>
+      <script src="../js/script.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+
+  </html>
