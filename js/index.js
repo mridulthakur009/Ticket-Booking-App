@@ -4,6 +4,7 @@ function validateForm() {
   let email = document.getElementById("email").value.trim();
   let mobileNumber = document.getElementById("mobNumber").value.trim();
   let password = document.getElementById("password").value.trim();
+  let agreeTerms = document.getElementById("agreeTerms").checked;
 
   let firstNameRegex = /^[a-zA-Z]+$/;
   if (!firstNameRegex.test(firstName)) {
@@ -52,6 +53,12 @@ function validateForm() {
   } 
   else {
     document.getElementById("passwordError").textContent = '';
+  }
+  if (!agreeTerms) {
+    termsError.textContent = "* Please agree to the terms of service.";
+    return false;
+  } else {
+    termsError.textContent = '';
   }
 
   let userData = {

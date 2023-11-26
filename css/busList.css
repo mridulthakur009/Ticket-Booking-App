@@ -1,0 +1,23 @@
+.font-size-dec{
+    opacity: 0.5;
+    font-size: small;
+}
+.select-seat-button {
+    background-color: #fff;
+    border-color: #00b8f8;
+    color: #00b8f8;
+    border-radius: 6px;
+    padding: .5em;
+    transition: all 1s;
+    cursor: pointer;
+    border: 1px solid;
+    font-weight: 600;
+}
+.select-seat-button:hover{
+    color: white;
+    background-color: #00b8f8;
+}
+.price{
+    font-weight: 700;
+    font-size:medium;
+}

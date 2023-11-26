@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book My Bus</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/seats.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+</head>
+
+<body>
+    <section>
+        <div class="container mt-5">
+        <div class="card mx-auto ticket-card">
+            <div class="card-header text-center bg-primary text-white">
+                <h1 class="card-title mb-0">Bus Ticket</h1>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>Date:</strong>
+                        <span id="date" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>Departure Time:</strong>
+                        <span id="departure-time" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>From:</strong>
+                        <span id="from" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>To:</strong>
+                        <span id="to" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>Passenger Name:</strong>
+                        <span id="passenger-name" class="fw-bold"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>Seat Number:</strong>
+                        <span id="seat-number" class="fw-bold"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Dummy data for the ticket
+    const ticketData = {
+        date: "2023-11-25",
+        departureTime: "08:00 AM",
+        from: "City A",
+        to: "City B",
+        passengerName: "John Doe",
+        seatNumber: "A12",
+    };
+
+    // Update ticket details with the dummy data
+    document.getElementById("date").innerText = ticketData.date;
+    document.getElementById("departure-time").innerText = ticketData.departureTime;
+    document.getElementById("from").innerText = ticketData.from;
+    document.getElementById("to").innerText = ticketData.to;
+    document.getElementById("passenger-name").innerText = ticketData.passengerName;
+    document.getElementById("seat-number").innerText = ticketData.seatNumber;
+});
+
+    </script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
