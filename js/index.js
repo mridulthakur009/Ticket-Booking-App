@@ -57,7 +57,8 @@ function validateForm() {
   if (!agreeTerms) {
     termsError.textContent = "* Please agree to the terms of service.";
     return false;
-  } else {
+  } 
+  else {
     termsError.textContent = '';
   }
 

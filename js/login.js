@@ -8,9 +8,11 @@ function validateLogin() {
       alert('Login successful!');
     
     } else {
-      alert('Invalid email or password.');
+      document.getElementById('userError').textContent=' * Invalid email or password.';
       return false;
     }
+
+    localStorage.setItem('isLoggedIn', 'true');
 
     window.location.href = "../pages/home-page.html";
 

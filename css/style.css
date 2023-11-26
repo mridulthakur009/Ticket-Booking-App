@@ -84,8 +84,7 @@ header {
   border-bottom: 2px solid #1977cc;
 }
 
-#myNavbar li:last-child a, #myNavbar li:nth-child(5){
-  background-color: #1977cc;
+#myNavbar li:last-child a{
   color: #fff;
   border-radius: 20px;
 }
