@@ -3,52 +3,39 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 .bg-img{
   background-image: url(../images/bg-img-1.jpg);
   background-repeat: repeat-x;
   background-size: cover;
 }
-
 .bg-img-signup{
   background-image: url(../images/bg-img-1.jpg);
   background-size: cover;
   height: 100vh;
 }
-
 .index-bg-img{
   background-image: url(../images/bg-img-3.jpg);
   background-size: cover;
 }
-.input-group-text{
-  background-color: #000;
-}
-
 button {
     color: #fff;
 }
-
 .topHeader {
     padding: 10px 0;
 }
-
 .topHeader .socialMedia {
     float: right;
 }
-
 .topHeader a {
     text-decoration: none;
     margin-right: 10px;
 }
-
 .topHeader a:last-child {
     margin-right: 0;
 }
-
 .topHeader i {
     color: #1977cc;
 }
-
 header {
     position: -webkit-sticky;
     position: sticky;
@@ -56,14 +43,12 @@ header {
     z-index: 999;
     background-color: #fff;
 }
-
 #myNavbar a {
 	text-decoration: none;
 	text-transform: capitalize;
 	color: #3C4964;
 	padding: 5px 30px;
 }
-
 .navMenu {
   padding: 5px 0;
   border: 1px solid #e0e0e0;
@@ -72,137 +57,20 @@ header {
   float: right;
   padding-right: 0;
 }
-
 .navMenu nav {
   background-color: #fff;
   border: none;
   margin-bottom: 0;
 }
-
-.menuItems li:first-child a {
-  color: #207BCE;
-  border-bottom: 2px solid #1977cc;
-}
-
 #myNavbar li:last-child a{
   color: #fff;
   border-radius: 20px;
 }
-
 .homePageBg{
   background-image: url(../images/bg-img-2.webp);
   height: 70vh;
   background-repeat: no-repeat;
 }
-
-.bsrc-btn {
-  height: 66px;
-  width: 239px;
-  cursor: pointer;
-  background: #ef6614;
-  float: right;
-  text-align: center;
-  display: block;
-  color: #fff;
-  font-size: 20px;
-  outline: 0;
-  border: 0;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: 'Poppins', sans-serif, Tahoma, Arial!important;
-  -webkit-border-top-right-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -moz-border-radius-bottomright: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;}
-
-.bsrc-btn:hover{
-  background:#da5200;
-}	
-
-.s_col_btn_b {
-  width: 216px;
-  float: right;
-}
-.dt_icn {
-  width: 27px;
-  height: 48px;
-  position: absolute;
-  padding: 0;
-  opacity: .3;
-  right: 10px;
-  top: 2px;
-  z-index:99;
-	
-}
-.middle-sec {
-  width: 1200px;
-  padding: 40px 0px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.search_bg {width: 92%;
-  background: #fff;
-  border-radius: 3px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  padding: 0;
-  margin: 0 auto;
-  box-shadow: 4px 4px 4px rgba(71,101,187,.75);
-  -moz-box-shadow: 4px 4px 4px rgba(71,101,187,.75);
-  -webkit-box-shadow: 4px 4px 4px rgba(71,101,187,.75);
-}
-.clr{
-    clear:both;
-}
-
-.s_col_1 {
-  width:296px;
-  float: left;
-  position: relative;
-  border-right: 1px solid #d6d3d3;
-  padding: 0;
-}
-  
-.input_city, .input_cld {
-  border: 0;
-  color: #000;
-  background: none;
-  float: left;
-  font-weight: 600;
-  font-size: 19px;
-  outline: medium none;
-  padding: 18px 0 19px 20px;
-  width: 275px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-}
-
-.input_city_n {
-  border: 0;
-  color: #000;
-  background: none;
-  float: left;
-  font-weight: 600;
-  font-size: 19px;
-  outline: medium none;
-  padding: 18px 0 19px 20px;
-  width: 275px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: 'Poppins', sans-serif, Tahoma, Arial!important;
-  position: relative;
-  z-index: 11;
-  cursor: pointer;
-}
-
 .font-size-dec{
   opacity: 0.5;
   font-size: small;
@@ -218,12 +86,21 @@ header {
   border: 1px solid;
   font-weight: 600;
 }
-.select-seat-button:hover{
-  color: white;
-  background-color: #00b8f8;
-}
 .price{
   font-weight: 700;
   font-size:medium;
 }
 
+/* login page */
+
+.bg-img{
+  background-image: url(../images/bg-img-1.jpg);
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+.input-group-text{
+  background-color: #000;
+}
+button {
+    color: #fff;
+}
