@@ -104,3 +104,8 @@ header {
 button {
     color: #fff;
 }
+
+
+.hideBus{
+  display: none;
+}

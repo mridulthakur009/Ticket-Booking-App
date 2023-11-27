@@ -2,6 +2,7 @@
   background-image: url(../images/icon-steering-wheel.svg);
   background-repeat: no-repeat;
   background-position: 50%;
+ ;
   pointer-events: none
 }
 .seat-view {
@@ -9,13 +10,15 @@
   transform-origin: top left;
   transform: rotate(-90deg) translate(-50%);
   max-height: 485px;
-
+  
 }
 .seats {
-  padding: 2px;
+  padding: 3px;
   background-image: url(../images/icon-seat-available.svg);
   background-repeat: no-repeat;
-  background-position: 50%
+  background-position: 50%;
+  font-size: small;
+  
 }
 .seats.seat-unavailable {
   background-image: url(../images/icon-seat-unavailable.svg);

@@ -12,7 +12,7 @@ function validateLogin() {
       return false;
     }
 
-    localStorage.setItem('isLoggedIn', 'true');
+    localStorage.setItem('isLoggedIn', false);
 
     window.location.href = "../pages/home-page.html";
 

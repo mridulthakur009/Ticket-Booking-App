@@ -77,29 +77,27 @@
           <div class="row">
             <div class="col-lg-3 col-md-6  mt-5">
               <select class="form-control" id="start">
-                <option value="Source City">Source City</option>
+                <option value="">Source City</option>
                 <option value="Chandigarh">Chandigarh</option>
                 <option value="Shimla">Mandi</option>
-                <option value="Solan">Shimla</option>
                 <option value="Solan">Manali</option>
             </select>
-            </div>
+            <span id="startError"></span>
+          </div>
             <div class="col-lg-3 col-md-6 mt-5">
               <select class="form-control" id="end">
-                <option value="Destination City">Destination City</option>
+                <option value="">Destination City</option>
                 <option value="Chandigarh">Chandigarh</option>
                 <option value="Shimla">Mandi</option>
-                <option value="Solan">Shimla</option>
-                <option value="Solan">Manali</option>
+                <option value="Shimla">Shimla</option>
             </select>
             </div>
             <div class="col-lg-3 col-md-6 mt-5">
               <input type="date" class="form-control" id="datepicker"
-                name="datepicker"
                 placeholder="dd-mm-yyyy" min="2023-11-27">
             </div>
             <div class="col-lg-3 col-md-6 mt-5">
-              <input value="Search" type="submit"
+              <input value="Search" type="button" id="search" onclick="searchbuses()"
                 class="form-control btn btn-success">
             </div>
           </div>
@@ -110,8 +108,17 @@
     <section>
       <div class="container">
         <div class="row">
+          <div class="col-10 offset-1" id="buslist">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <div class="container">
+        <div class="row hideBus">
         <div class="col-10 offset-1">
-          <div class="card mt-4">
+          <div class="card mt-4 ">
             <div class="card-body">
                     <div class="row">
                         <div class="col-4">
@@ -187,10 +194,11 @@
         </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-      <script src="../js/homePage.js"></script>
       <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/homePage.js"></script>
+
     </body>
 
   </html>
