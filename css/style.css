@@ -86,6 +86,10 @@ header {
   border: 1px solid;
   font-weight: 600;
 }
+.select-seat-button:hover{
+  color: #fff;
+  background-color:  #00b8f8;
+}
 .price{
   font-weight: 700;
   font-size:medium;
@@ -103,9 +107,4 @@ header {
 }
 button {
     color: #fff;
-}
-
-
-.hideBus{
-  display: none;
 }
