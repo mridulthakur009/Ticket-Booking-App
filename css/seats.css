@@ -50,3 +50,30 @@
   border: 1px solid #000;
   border-radius: 5px
 }
+.seat-selected {
+  background-image: url(../images/icon-seat-unavailable.svg);
+  pointer-events: none;
+}
+
+#pay-now-button{
+  background-color: #fff;
+    border-color: #00b8f8;
+    color: #00b8f8;
+    border-radius: 6px;
+    padding: .5em;
+    transition: all .6s;
+    cursor: pointer;
+    border: 1px solid;
+    font-weight: 600;
+}
+#pay-now-button:hover{
+  color: white;
+  background-color: #00b8f8;
+}
+
+.bottom p{
+  font-family: Montserrat-Regular;
+  font-size: medium;
+  font-weight: bold;
+  display: inline-block;  
+}

@@ -57,7 +57,7 @@ function displayBusList(busData) {
   busListDiv.innerHTML = '';
 
   if (busData.length === 0) {
-      busListDiv.innerHTML = 'No buses available for the selected route and date.';
+      busListDiv.innerHTML = 'Source City and Destination City cannot be same';
       return;
   }
 

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         selectedSeatsElement.textContent = selectedSeats.join(', ');
 
-        const seatPrice = 100; 
+        const seatPrice = 100;
         const amount = selectedSeats.length * seatPrice;
 
         totalAmountElement.innerHTML = ` ₹ ${amount}`;
@@ -17,22 +17,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     seats.forEach(seat => {
         seat.addEventListener('click', () => {
-            seat.classList.toggle('seat-selected');
-
-            const seatNumber = seat.textContent;
-
-            if (selectedSeats.includes(seatNumber)) {
+            if (seat.classList.contains('seat-selected')) {
+                seat.classList.remove('seat-selected');
+                const seatNumber = seat.textContent;
                 selectedSeats.splice(selectedSeats.indexOf(seatNumber), 1);
             } else {
-                selectedSeats.push(seatNumber);
+                if (selectedSeats.length < 5) {
+                    seat.classList.add('seat-selected');
+                    const seatNumber = seat.textContent;
+                    selectedSeats.push(seatNumber);
+                } else {
+                    alert('You can select a maximum of 5 seats.');
+                }
             }
-
-            if (selectedSeats.length > 5) {
-                alert('You can select a maximum of 5 seats.');
-                seat.classList.remove('seat-selected'); 
-                selectedSeats.pop();
-            }
-
             updateSelectedSeats();
         });
     });
@@ -42,9 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (selectedSeats.length < 2) {
             alert('Please select at least 2 seats before proceeding to payment.');
         } else {
-
             window.location.href = '../pages/ticket.html';
         }
     });
 });
-
