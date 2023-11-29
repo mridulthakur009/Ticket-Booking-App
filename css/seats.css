@@ -77,3 +77,7 @@
   font-weight: bold;
   display: inline-block;  
 }
+
+.margin-top-negative{
+  margin-top: -70px;
+}

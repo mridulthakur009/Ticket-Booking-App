@@ -77,3 +77,9 @@ alert("Congratulations!! \nUser Created Successfully ");
 window.location.href = "../pages/login.html";
 
 }
+
+if (seat.classList.contains('seat-selected')) {
+  // Seat is currently selected, so unselect it
+  seat.classList.remove('seat-selected');
+  selectedSeats.splice(selectedSeats.indexOf(seatNumber), 1);
+}
