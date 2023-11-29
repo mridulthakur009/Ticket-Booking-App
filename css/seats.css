@@ -52,7 +52,6 @@
 }
 .seat-selected {
   background-image: url(../images/icon-seat-unavailable.svg);
-  pointer-events: none;
 }
 
 #pay-now-button{

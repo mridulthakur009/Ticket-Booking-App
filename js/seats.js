@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const seats = document.querySelectorAll('.seats');
     const selectedSeats = [];
-    const seatPrice = 100;
+    const seatPrice = 500;
     const selectedSeatsElement = document.getElementById('selected-seats');
     const totalAmountElement = document.getElementById('total-amount');
 
@@ -11,21 +11,28 @@ document.addEventListener('DOMContentLoaded', function () {
         const amount = selectedSeats.length * seatPrice;
         totalAmountElement.innerHTML = ` ₹ ${amount}`;
     }
+    
+    function toggleSeat(seat) {
+        const seatNumber = seat.textContent;
+
+        const index = selectedSeats.indexOf(seatNumber);
+
+        if (index === -1 && selectedSeats.length < 5) {
+            seat.classList.add('seat-selected');
+            selectedSeats.push(seatNumber);
+        } else if (index !== -1) {
+            seat.classList.remove('seat-selected');
+            selectedSeats.splice(index, 1);
+        } else {
+            alert('You can select a maximum of 5 seats.');
+        }
+
+        updateSelectedSeats();
+    }
 
     seats.forEach(seat => {
         seat.addEventListener('click', () => {
-            const seatNumber = seat.textContent;
-
-                if (selectedSeats.length < 5) {
-                    seat.classList.add('seat-selected');
-                    selectedSeats.push(seatNumber);
-                } else {
-                    alert('You can select a maximum of 5 seats.');
-                }
-                 
-            
-
-            updateSelectedSeats();
+            toggleSeat(seat);
         });
     });
 
