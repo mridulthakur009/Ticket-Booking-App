@@ -14,7 +14,7 @@ function validateForm() {
     document.getElementById("firstNameError").textContent = "";
   }
 
-  if (firstName.length > 10) {
+  if (firstName.length > 10) {  
     document.getElementById("firstNameError").textContent = "* First name must be less than 10 characters.";
   }
 
@@ -62,6 +62,11 @@ function validateForm() {
     termsError.textContent = '';
   }
 
+  if(localStorage.getItem(email)){
+    alert("Email is already in use");
+    return false;
+  }
+
   let userData = {
     firstName: firstName,
     lastName: lastName,
@@ -72,14 +77,6 @@ function validateForm() {
 
   localStorage.setItem(email, JSON.stringify(userData));
 
-alert("Congratulations!! \nUser Created Successfully ");
-
 window.location.href = "../pages/login.html";
 
-}
-
-if (seat.classList.contains('seat-selected')) {
-  // Seat is currently selected, so unselect it
-  seat.classList.remove('seat-selected');
-  selectedSeats.splice(selectedSeats.indexOf(seatNumber), 1);
 }

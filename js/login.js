@@ -5,15 +5,10 @@ function validateLogin() {
     let storedUserData = JSON.parse(localStorage.getItem(email));
 
     if (storedUserData  && storedUserData.password === password) {
-      alert('Login successful!');
-    
+      window.location.href = "../pages/home-page.html";
     } else {
       document.getElementById('userError').textContent=' * Invalid email or password.';
       return false;
     }
-
-    localStorage.setItem('isLoggedIn', false);
-
-    window.location.href = "../pages/home-page.html";
 
 }
