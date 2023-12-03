@@ -12,7 +12,7 @@
   <body>
 
     <div class="topHeader" id="top">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
             <div class="contactInfo">
@@ -37,7 +37,7 @@
     <header>
       <div class="navMenu">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
+          <div class="container-fluid">
             <a class="navbar-brand" href="#" id="logo">
               <img src="../images/logo1.ico" alt="logo" width="50px"
                 height="50px">
@@ -82,7 +82,7 @@
                 <option value="Shimla">Shimla</option>
                 <option value="Manali">Manali</option>
             </select>
-            <span id="startError"></span>
+            <span id="startError" class="text-danger"></span>
           </div>
             <div class="col-lg-3 col-md-6 mt-5">
               <select class="form-control" id="end">
@@ -91,10 +91,12 @@
                 <option value="Shimla">Shimla</option>
                 <option value="Manali">Manali</option>
             </select>
-            </div>
+            <span id="endError" class="text-danger"></span>
+          </div>
             <div class="col-lg-3 col-md-6 mt-5">
               <input type="date" class="form-control" id="date"
                 placeholder="dd-mm-yyyy">
+                <span id="dateError" class="text-danger"></span>
             </div>
             <div class="col-lg-3 col-md-6 mt-5">
               <input value="Search" type="submit" id="search" onclick="searchbuses()"
@@ -108,20 +110,13 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="" id="buslist">
+          <div id="buslist">
 
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="row" id="busListContainer">
-
-        </div>
-      </div>
-    </section>
       <script src="../js/bootstrap.bundle.min.js"></script>
       <script src="../js/homePage.js"></script>
 

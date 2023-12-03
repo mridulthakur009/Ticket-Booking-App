@@ -15,6 +15,27 @@ function logOut(){
 function searchbuses() {
   let start = document.getElementById('start').value;
   let end = document.getElementById('end').value;
+  let date = document.getElementById('date').value;
+
+  if(start == ""){
+    document.getElementById("startError").textContent = "Please select city from dropdown";
+  }
+  else{
+    document.getElementById("startError").textContent = "";
+  }
+  if(end == ""){
+    document.getElementById("endError").textContent = "Please select city from dropdown";
+  }
+  else{
+    document.getElementById("endError").textContent = "";
+  }
+  if(date == ""){
+    document.getElementById("dateError").textContent = "Please select date";
+    return false;
+  }
+  else{
+    document.getElementById("dateError").textContent = "";
+  }
 
   let busData = getBusData(start, end);
 
@@ -63,7 +84,7 @@ function displayBusList(busData) {
 
   busData.forEach(bus => {
       let busListing = `
-              <div class="card mt-4">
+              <div class="card my-4">
                   <div class="card-body">
                       <div class="row">
                           <div class="col-4">
@@ -107,6 +128,6 @@ function displayBusList(busData) {
 }
 
 function selectSeats(busName) {
-  window.location.href = `../pages/seats.html?bus=${encodeURIComponent(busName)}`;
+  window.location.href = `../pages/seats.html?bus=${(busName)}`;
 }
 document.getElementById('date').min = new Date().toISOString().split('T')[0];
